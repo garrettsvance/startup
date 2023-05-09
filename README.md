@@ -9,9 +9,11 @@ Managing and maintaining a healthy pool can be exhausting, especially when tryin
 ## Design
 
 Log in/authentication mock-up
+
 ![Screenshot of the sign-in page](https://github.com/garrettsvance/startup/assets/88953533/33ccd6b8-c72b-4c84-8e36-55fdbdc94724)
 
 Data Entry mock-up as well as links to previous entries/group forums
+
 ![Screenshot of data entry page](https://github.com/garrettsvance/startup/assets/88953533/06121829-23b1-4e5a-85f5-86ea99c32257)
 
 

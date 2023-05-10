@@ -10,3 +10,9 @@ To pull from github:
 
     git pull
 
+
+##HTML Notes
+
+To add a hyperlink:
+
+'''<div><a href="https://www.byu.edu/">BYU</a></div>'''

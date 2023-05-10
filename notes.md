@@ -15,4 +15,4 @@ To pull from github:
 
 To add a hyperlink:
 
-    <div><a href="https://www.byu.edu/">BYU</a></div>
+    \<div><a href="https://www.byu.edu/">BYU</a></div>

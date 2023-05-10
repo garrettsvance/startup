@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Pool Manager</title>
+    </head>
+    <body>    
+        <header>
+            <h1>My Pool Manager<sup>&reg;</sup></h1>
+
+            <nav>
+
+                <menu>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="waterstatus.html">Water Status</a></li>
+                    <li><a href="forums.html">Forums</a></li>
+                </menu>
+            </nav>
+
+        <hr />
+    </header>
+
+    <main>
+        <form method="get">
+            <label for="poolsize">Please enter your <strong>pool size</strong> in "gallons:"</label>
+            <input type="number" id="poolsize" placeholder="Gallons" />
+            <br />
+            <label for="phlevel">Please enter your current <strong>PH</strong> level readings as a whole number: (Ex: 2.0) </label>
+            <input type="number" id="phlevel" placeholder="PH" />
+            <br />
+            <label for="boundchl">Please enter your <strong>Total Chlorine </strong>level readings as it is shown on your test: (Ex: 0.5, 1, 5, etc.) </label>
+            <input type="number" id="boundchl" placeholder="Total Chlorine" />
+            <br />
+            <label for="freechl">Please enter your <strong>Free Chlorine</strong> level readings as it is shown on your test: (Ex: 0.5, 1, 5, etc.) </label>
+            <input type="number" id="freechl" placeholder="Free Chlorine" />
+            <br />
+            <label for="alkalinity">Please enter your <strong>Alkalinity</strong> level readings (PPM) as it is shown on your test:</label>
+            <input type="number" id="alka" placeholder="Alkalinity" />
+            <br />
+            <button type="submit">Submit and Receive Recommendations</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <hr />
+        <span class="text-reset">Author:</span>
+        <br />
+        <a href="https://github.com/garrettsvance">GitHub</a>
+    </footer>
+</body>
+</html>

@@ -8,8 +8,8 @@ header {
     flex: 0 80px;
 }
 
-main {    
-    background-color:rgb(91, 147, 231);
+main.container-fluid {    
+    background-color:rgb(91, 147, 231) !important;
     flex: 1 calc(100vh - 110px);
     display: flex;
     flex-direction: column;
@@ -27,6 +27,8 @@ menu {
     flex-direction: row !important;
     list-style: none;
 }
+
+.container-fluid bg-secondary text-center
 
 .navbar-brand {
     padding-left: 0.3em;

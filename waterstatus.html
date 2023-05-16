@@ -12,7 +12,7 @@
         crossorigin="anonymous"
       />
     </head>
-    <body class="bg-dark text-light">
+    <body class="bg-secondary text-dark">
         <header class="container-fluid">
             <nav class="navbar fixed-top navbar-dark">
                 <a class="navbar-brand" href="#">My Pool Manager<sup>&reg;</sup></a>
@@ -33,8 +33,10 @@
             </nav>
         </header>
 
-    <main>
-        <h2>Check Current Water Status/Receive Recommendations</h2>
+    <main class="container-fluid">
+        <div class="check-receive">
+            <h2>Check Current Water Status/Receive Recommendations</h2>
+        </div>
         <form method="get" action="recommendations.html">
             <label for="poolsize">Please enter your <strong>pool size</strong> in "gallons:"</label>
             <input type="number" id="poolsize" placeholder="Gallons" />

@@ -31,3 +31,18 @@ menu {
     flex-direction: row !important;
     list-style: none;
 }
+
+.submit-button {
+    align-items: center;
+}
+
+.picture-box {
+    height: calc(100px + 1em);
+    margin-bottom:1em;
+    padding:0.5em;
+}
+
+#picture img {
+    width:50%;
+    height:50%;
+}

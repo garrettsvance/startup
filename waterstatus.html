@@ -34,27 +34,38 @@
         </header>
 
     <main class="container-fluid">
-        <div class="check-receive">
-            <h2>Check Current Water Status/Receive Recommendations</h2>
+        <div id="picture" class="picture-box"><img src="Pool-Test-Strips.jpg" alt="random"/></div>
         </div>
-        <form method="get" action="recommendations.html">
-            <label for="poolsize">Please enter your <strong>pool size</strong> in "gallons:"</label>
-            <input type="number" id="poolsize" placeholder="Gallons" />
-            <br />
-            <label for="phlevel">Please enter your current <strong>PH</strong> level readings as a whole number: (Ex: 2.0) </label>
-            <input type="number" id="phlevel" placeholder="PH" />
-            <br />
-            <label for="boundchl">Please enter your <strong>Total Chlorine </strong>level readings as it is shown on your test: (Ex: 0.5, 1, 5, etc.) </label>
-            <input type="number" id="boundchl" placeholder="Total Chlorine" />
-            <br />
-            <label for="freechl">Please enter your <strong>Free Chlorine</strong> level readings as it is shown on your test: (Ex: 0.5, 1, 5, etc.) </label>
-            <input type="number" id="freechl" placeholder="Free Chlorine" />
-            <br />
-            <label for="alkalinity">Please enter your <strong>Alkalinity</strong> level readings (PPM) as it is shown on your test:</label>
-            <input type="number" id="alka" placeholder="Alkalinity" />
-            <br />
-            <button type="submit">Submit and Receive Recommendations</button>
-        </form>
+            <div class="check-receive">
+                <h2>Check Current Water Status/Receive Recommendations</h2>
+                <form method="get" action="recommendations.html">
+                    <label for="poolsize">Please enter your <strong>pool size</strong> in "gallons:"</label>
+                    <br />
+                    <input type="number" id="poolsize" placeholder="Gallons" />
+                    <br />
+                    <label for="phlevel">Please enter your current <strong>PH</strong> level readings as a whole number: (Ex: 2.0) </label>
+                    <br />
+                    <input type="number" id="phlevel" placeholder="PH" />
+                    <br />
+                    <label for="boundchl">Please enter your <strong>Total Chlorine </strong>level readings as it is shown on your test: (Ex: 0.5, 1, 5, etc.) </label>
+                    <br />
+                    <input type="number" id="boundchl" placeholder="Total Chlorine" />
+                    <br />
+                    <label for="freechl">Please enter your <strong>Free Chlorine</strong> level readings as it is shown on your test: (Ex: 0.5, 1, 5, etc.) </label>
+                    <br />
+                    <input type="number" id="freechl" placeholder="Free Chlorine" />
+                    <br />
+                    <label for="alkalinity">Please enter your <strong>Alkalinity</strong> level readings (PPM) as it is shown on your test:</label>
+                    <br />
+                    <input type="number" id="alka" placeholder="Alkalinity" />
+                    <br />
+                    <div class="submit-button text-center" >
+                    <button type="submit"
+                        class="btn  btn-secondary">Submit and Receive Recommendations
+                    </button>
+                    </div>
+                </form>
+            </div>
     </main>
 
 

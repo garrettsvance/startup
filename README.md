@@ -14,7 +14,8 @@ Log in/authentication mock-up
 
 Data Entry mock-up as well as links to previous entries/group forums
 
-![Screenshot of data entry page](https://github.com/garrettsvance/startup/assets/88953533/06121829-23b1-4e5a-85f5-86ea99c32257)
+![3vpMMuh](https://github.com/garrettsvance/startup/assets/88953533/687bb48f-8a40-4fa7-b935-a60d7e60fa7a)
+
 
 
 

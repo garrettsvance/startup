@@ -30,13 +30,22 @@ menu {
 
 .container-fluid bg-secondary text-center
 
-.navbar-brand {
-    padding-left: 0.3em;
+a .navbar-brand {
+    margin: 0.3em !important;
     border-bottom: solid rgb(91, 147, 231) thin;
+    background-color:white;
+}
+
+.logo {
+    margin-left: 0.3em;
+}
+
+nav .navbar-dark {
+    padding: 0 0.3em;
 }
 
 menu .nav-item {
-    padding: 0 0.3em
+    padding: 0 0.8em
 }
 
 footer a {

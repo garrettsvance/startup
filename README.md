@@ -58,3 +58,34 @@ Data Entry mock-up as well as links to previous entries/group forums
 ### React
 * Application ported to use the React web framework
 
+## HTML deliverable
+For this deliverable, the application structure was created.
+1. 5 HTML pages
+  - Login, checking water status, previous tests, recommendations, and forums
+2. Links
+  - Links to different pages, starting with login
+3. Text
+  - Input options and instructions for text
+4. Images
+  - Images shown for the general idea of what a test looks like
+5. Login
+  - Simple username and password box
+6. Database
+  - Previous tests are shown
+7. Websocket
+  - Reviews of the products we recommend by other customers
+
+## CSS Deliverable
+* Made changes to the application to better reflect the color of pool/concrete, as well as more navigationally sensible
+
+1. Header, footer, and main content body
+2. Navigation Elements
+  - Spaced out the Navigation elements a bit to make them more readable
+3. Responsive to window resizing
+4. Application Elements
+  - Used readable color contrasts, as well as a minimalist approach to information given/asked for
+5. Application Text Content
+  - Consistent readable colors, and consistent font throughout
+6. Application Images
+  - Example test is shown on Water Status page, to help locate the information needed
+

@@ -34,12 +34,15 @@
         </header>
 
     <main class="container-fluid">
+        <div class="user">
+            <p>Welcome, <span class="user-name"></span></p>
+        </div>
         <div class="row text-center mainpage">
             <div id="picture" class="picture-box"><img src="Pool-Test-Strips.jpg" alt="random" style="height:375px"/></div>
             </div>
-                <div class="check-receive">
+                <div class="checkStatus">
                     <h2>Check Current Water Status/Receive Recommendations</h2>
-                    <form method="get" action="recommendations.html">
+                    <form>
                         <label for="poolsize">Please enter your <strong>pool size</strong> in "gallons:"</label>
                         <br />
                         <input type="number" id="poolsize" placeholder="Gallons" />
@@ -60,13 +63,12 @@
                         <br />
                         <input type="number" id="alka" placeholder="Alkalinity" />
                         <br />
-                        <div class="submit-button text-center" >
-                            <button type="submit"
-                            class="btn  btn-secondary">Submit and Receive Recommendations
-                            </button>
-                        </div>
+                        <input type="button" id="subBtn" value="Submit and Receieve Recommendations">
                     </form>
                 </div>
+        </div>
+        <div class="receieveRecs text-start">
+            <p>Based on your pool size of <span class="output" id="output1"> </span></p>
         </div>
     </main>
 
@@ -77,5 +79,6 @@
             <a class="text-reset" href="https://github.com/garrettsvance/startup">GitHub</a>
         </div>
     </footer>
+    <script src="waterstatus.js"></script>
 </body>
 </html>

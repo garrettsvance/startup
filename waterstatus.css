@@ -2,23 +2,29 @@
     text-align: center;
 }
 
-main.container-fluid {    
-    background-color:rgb(91, 147, 231) !important;
-    flex: 1 calc(100vh - 110px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
 body {
     display: flex;
     flex-direction: column;
     min-width: 375px;
+    height:100vh;
 }
 
 header {
     flex: 0 80px;
+    background-color:darkgray !important;
+    border: 2px black;
+    min-height: 80px;
+}
+
+
+
+main.container-fluid {    
+    background-color:rgb(91, 147, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100%;
 }
 
 footer {
@@ -32,6 +38,43 @@ menu {
     list-style: none;
 }
 
+.container-fluid bg-secondary text-center
+
+a .navbar-brand {
+    margin: 0.3em !important;
+    border-bottom: solid rgb(91, 147, 231) thin;
+    background-color:white;
+}
+
+.logo {
+    margin-left: 0.3em;
+}
+
+nav .navbar-dark {
+    padding: 0 0.3em;
+}
+
+menu .nav-item {
+    padding: 0 0.8em
+}
+
+footer a {
+    float: right;
+}
+
+@media (max-height: 600px) {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    main {
+        flex: 1 100vh;
+    }
+}
+
+
 .submit-button {
     align-items: center;
 }
@@ -40,10 +83,11 @@ menu {
     height: calc(100px + 1em);
     margin-bottom:1em;
     padding:0.5em;
+    min-height:375px;
 }
 
 .picture {
-    float:right;
+    float:start;
 }
 
 .mainpage {
@@ -66,4 +110,24 @@ menu {
 
 .logo {
     margin-left: 0.3em;
+}
+
+.poolGal {
+    display: none;
+}
+
+.alk {
+    display: none
+}
+
+.frChl {
+    display: none
+}
+
+.totChl {
+    display: none
+}
+
+.phlvl {
+    display: none
 }

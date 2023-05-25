@@ -10,7 +10,6 @@ header {
 
 main.container-fluid {    
     background-color:rgb(91, 147, 231) !important;
-    flex: 1 calc(100vh - 110px);
     display: flex;
     flex-direction: column;
     align-items: center;

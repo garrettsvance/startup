@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Pool Manager</title>
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="waterstatus.css" />
         <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -12,9 +12,9 @@
         crossorigin="anonymous"
       />
     </head>
-    <body class="bg-secondary fixed-top text-dark">
-        <header class="container-fluid">
-            <nav class="navbar fixed-top navbar-dark logo">
+    <body>
+        <header>
+            <nav class="navbar navbar-dark logo">
                 <a class="navbar-brand" href="#">My Pool Manager<sup>&reg;</sup></a>
                 <menu class="navbar-nav">
                     <li class="nav-item">
@@ -35,11 +35,11 @@
 
     <main class="container-fluid">
         <div class="user">
-            <p>Welcome, <span class="user-name"></span></p>
+            <p>Welcome, <span class="user-name"></span>!</p>
+        </div>
+        <div id="picture" class="picture-box"><img src="Pool-Test-Strips.jpg" alt="random" style="height:375px"/></div>
         </div>
         <div class="row text-center mainpage">
-            <div id="picture" class="picture-box"><img src="Pool-Test-Strips.jpg" alt="random" style="height:375px"/></div>
-            </div>
                 <div class="checkStatus">
                     <h2>Check Current Water Status/Receive Recommendations</h2>
                     <form>
@@ -67,11 +67,59 @@
                     </form>
                 </div>
         </div>
-        <div class="receieveRecs text-start">
-            <p>Based on your pool size of <span class="output" id="output1"> </span></p>
+        <div class="poolGal" id="poolG">
+            <p>Based on your pool size of <span class="output" id="output1"></span>:</p>
         </div>
+        <br />
+        <div class="phlvl" id="phLow">
+            <p>Your PH levels are lower than optimal. You'll want to add some acids to your pool. Here are some recommended products:</p>
+        </div>
+        <div class="phlvl" id="phOpt">
+            <p>Your PH levels are just right! No further action is needed at this time.</p>
+        </div>
+        <div class="phlvl" id="phHigh">
+            <p>Your PH levels are higher than optimal. You'll want to add some alkalis to your pool. Here are some recommended products:</p>
+        </div>
+        <br />
+        <div class="totChl" id="totChlLow">
+            <p>Your Total Chlorine levels are lower than optimal. You'll want to add some chlorine tablets to your pool. Here are some recommended products:</p>
+        </div>
+        <div class="totChl" id="totChlOpt">
+            <p>Your Total Chlorine levels are just right! No further action is needed at this time.</p>
+        </div>
+        <div class="totChl" id="totChlHigh">
+            <p>Your Total Chlorine levels are higher than optimal. You'll want to keep your pool uncovered in order for the sunlight to dissapate the chlorine in your pool. You can also consider diluting the pool with more water if possible. </p>
+        </div>
+        <br />
+        <div class="frChl" id="frChlLow">
+            <p>Your Free Chlorine levels are lower than optimal. You'll want to "shock" your pool using calcium hypochlorite. Here are some recommended products:</p>
+        </div>
+        <div class="frChl" id="frChlOpt">
+            <p>Your Free Chlorine levels are just right! No further action is needed at this time.</p>
+        </div>
+        <div class="frChl" id="frChlHigh">
+            <p>Your Free Chlorine levels are higher than optimal. You'll want to keep your pool uncovered in order for the sunlight to dissapate the chlorine in your pool. You can also consider diluting the pool with more water if possible.</p>
+        </div>
+        <br />
+        <div class="alk" id="alkLow">
+            <p>Your Alkaline levels are lower than optimal. You'll want to add some sodium carbonate to your pool. Here are some recommended products:</p>
+        </div>
+        <div class="alk" id="alkOpt">
+            <p>Your Alkaline levels are just right! No further action is needed at this time.</p>
+        </div>
+        <div class="alk" id="alkHigh">
+            <p>Your Alkaline levels are higher than optimal. You'll want to add some sodium bisulfate to bring those levels back down. Here are some recommended products:</p>
+        </div>
+
     </main>
 
+
+<!-- 
+    toggle between different classes,
+    how to add an remove classes from elements in JS. inside classes, set display to block/none.
+
+
+    <div class="none information"> </div> -->
 
     <footer class="bg-dark text-dark text-muted">
         <div class="container-fluid">
@@ -79,6 +127,8 @@
             <a class="text-reset" href="https://github.com/garrettsvance/startup">GitHub</a>
         </div>
     </footer>
-    <script src="waterstatus.js"></script>
+    <script src="waterstatus.js" defer></script>
 </body>
 </html>
+
+

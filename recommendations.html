@@ -14,7 +14,7 @@
     </head>
     <body class="bg-secondary text-dark">
         <header class="container-fluid">
-            <nav class="navbar fixed-top navbar-dark logo">
+            <nav class="navbar navbar-dark logo">
                 <a class="navbar-brand" href="#">My Pool Manager<sup>&reg;</sup></a>
                 <menu class="navbar-nav">
                     <li class="nav-item">
@@ -24,7 +24,7 @@
                         <a class="nav-link" href="waterstatus.html">Water Status</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="previousentries.html">Previous Tests</a>
+                        <a class="nav-link active" href="recommendations.html">Product Recommendations</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="forums.html">Forums</a>
@@ -33,34 +33,34 @@
             </nav>
         </header>
 
+
         <main class="container-fluid">
-            <h2 id="poolInput">Our Recommendations Based on your Input of:</h2>
+            <div class="absolute" id="rating-event">
+                <div>Tim just completed a pool test</div>
+            </div>
+            <h2 id="poolInput">Our Recommendations:</h2>
             <br />
 
             <section>
                 <H4 id="ph">PH Level</H4>
-                <p>"Your PH levels are high/low. In order to get them back to where they need to be, follow these instructions."</p>
                 <p>Recommended Products:</p>
                 <p>Other Users Reviews:</p>
             </section>
 
             <section>
                 <h4>Bound Chlorine</h4>
-                <p>"Your Bound Chlorine levels are high/low. In order to get them back to where they need to be, follow these instructions.</p>
                 <p>Recommended Products:</p>
                 <p>Other Users Reviews:</p>
             </section>
 
             <section>
                 <h4>Free Chlorine</h4>
-                <p>"Your Free Chlorine levels are high/low. In order to get them back to where they need to be, follow these instructions.</p>
                 <p>Recommended Products:</p>
                 <p>Other Users Reviews:</p>
             </section>
 
             <section>
                 <h4>Alkalinity</h4>
-                <p>"Your Alkalinity levels are high/low. In order to get them back to where they need to be, follow these instructions.</p>
                 <p>Recommended Products:</p>
                 <p>Other Users Reviews:</p>
             </section>
@@ -72,5 +72,6 @@
                     <a class="text-reset"href="https://github.com/garrettsvance/startup">GitHub</a>
                 </div>
             </footer>
+            <script src="recommendations.js" defer></script>
         </body>
     </html>

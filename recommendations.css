@@ -15,6 +15,8 @@ body {
 
 header {
     flex: 0 80px;
+    background-color:darkgrey;
+    min-height: 80px;
 }
 
 footer {
@@ -31,3 +33,4 @@ menu {
 .logo {
     margin-left: 0.3em;
 }
+

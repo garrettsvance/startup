@@ -2,10 +2,13 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 375px;
+    height:100vh;
 }
 
 header {
     flex: 0 80px;
+    background-color:darkgrey;
+    min-height:80px;
 }
 
 main.container-fluid {    
@@ -14,6 +17,7 @@ main.container-fluid {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    min-height: 100%;
 }
 
 footer {
@@ -61,5 +65,17 @@ footer a {
     main {
         flex: 1 100vh;
     }
+}
+
+#rating-event.absolute {
+    border: 3px black;
+    position: absolute;
+    top:100px;
+    left: 0;
+    flex: 1;
+    width: 100%;
+    padding-top:0.5em;
+    text-align:left;
+    background-color:rgba(0,0,0,0);
 }
 

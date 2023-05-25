@@ -89,3 +89,15 @@ For this deliverable, the application structure was created.
 6. Application Images
   - Example test is shown on Water Status page, to help locate the information needed
 
+## JS Deliverable
+* For this deliverable I made my application functional to calculate pool chemical levels, give recommendations, and mock-track ratings given by other users
+
+1. login
+  - you log in, name is stored locally, and you are redirected to the calculations page
+2. Database 
+  - Calculations and recommendations are made based off of your inputted information
+3. Websocket
+  - setInterval function implimented to replicate real-time ratings of products we recommend, given by other users
+4. Application logic 
+  - based off the measurements given, you are told if your chemicals are in balance, or what they stand in need of
+

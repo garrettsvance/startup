@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Pool Manager</title>
+        <link rel="stylesheet" href="main.css" />
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"
+      />
+    </head>
+    <body class="bg-secondary text-dark">
+        <header class="container-fluid">
+            <nav class="navbar navbar-dark logo">
+                <a class="navbar-brand" href="#">My Pool Manager<sup>&reg;</sup></a>
+                <menu class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="waterstatus.html">Water Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recommendations.html">Product Recommendations</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="forums.html">Forums</a>
+                    </li> -->
+                </menu>
+            </nav>
+        </header>
+
+        <main class="container-fluid bg-secondary text-center">
+            <div>
+                <h2>Please Log In to Continue</h2>
+                <div>
+                    <input type="text" id="name" placeholder="Username" />
+                    <button class="btn btn-secondary" onclick="login()">Login</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-dark text-muted">
+            <div class="container-fluid">
+            <span class="text-reset">Garrett Vance</span>
+                <a class="text-reset"href="https://github.com/garrettsvance/startup">GitHub</a>
+            </div>
+        </footer>
+        <script src="login.js"></script>
+    </body>
+</html>

@@ -101,3 +101,17 @@ For this deliverable, the application structure was created.
 4. Application logic 
   - based off the measurements given, you are told if your chemicals are in balance, or what they stand in need of
 
+## Service Deliverable
+* for this deliverable I created an HTTP service to host my frontend and provid ebackend endpoints
+
+1. Node.js/Express HTTP service
+  - completed
+2. Statis Middleware for frontend
+  - completed
+3. Calls to third party endpoints
+  - completed
+4. Backend Service Endpoints
+  - Placeholders for both user login and ratings on products
+5. Frontend calls service endpoints
+  - Completed with fetch function 
+

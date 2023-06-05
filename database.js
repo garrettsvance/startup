@@ -3,7 +3,7 @@ const config = require('./dbConfig.json');
 
 async function main() {
   // Connect to the database cluster
-  const url = `mongodb+srv://gvance260:gl0w1ng0j0s@cluster0.wdnmatw.mongodb.net/`;
+  const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`; //remove password?
   const client = new MongoClient(url);
   const db = client.db('rental');
   const collection = db.collection('house');

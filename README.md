@@ -115,3 +115,13 @@ For this deliverable, the application structure was created.
 5. Frontend calls service endpoints
   - Completed with fetch function 
 
+## DB Deliverable
+* For this deliverable I stored and retrieved data from MongoDB.
+
+1. MongoDB Atlas database created
+  - completed
+2. Endpoints for data 
+  - Submit ratings button sends information to MongoDB
+3. Stores Data in MongoDB
+  - completed
+  

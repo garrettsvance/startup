@@ -3,10 +3,8 @@
   if (userName) {
     document.querySelector('#name').textContent = userName;
     setDisplay('loginControls', 'none');
-    setDisplay('playControls', 'block');
   } else {
     setDisplay('loginControls', 'block');
-    setDisplay('playControls', 'none');
   }
 })();
 
@@ -39,4 +37,20 @@ async function loginOrCreate(endpoint) {
     const msgModal = new bootstrap.Modal(modalEl, {});
     msgModal.show();
   }
+}
+
+async function getUser(email) {
+  const response = await fetch(`/api/user/${email}`);
+  if (response.status === 200) {
+    return response.json();
+  }
+
+  return null;
+}
+
+function logout() {
+  localStorage.removeItem('userName');
+  fetch(`/api/auth/logout`, {
+    method: 'delete',
+  }).then(() => (window.location.href = '/'));
 }

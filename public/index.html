@@ -36,10 +36,18 @@
         <main class="container-fluid bg-secondary text-center">
             <div>
                 <h2>Please Log In to Continue</h2>
-                <div>
-                    <input type="text" id="name" placeholder="Username" />
-                    <button class="btn btn-secondary" onclick="login()">Login</button>
-                </div>
+                <div id="loginControls">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">@</span>
+                      <input class="form-control" type="text" id="userName" placeholder="your@email.com" />
+                    </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">🔒</span>
+                      <input class="form-control" type="password" id="userPassword" placeholder="password" />
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="loginUser()">Login</button>
+                    <button type="button" class="btn btn-primary" onclick="createUser()">Create</button>
+                  </div>
             </div>
         </main>
 

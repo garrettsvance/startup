@@ -78,50 +78,50 @@ For this deliverable, the application structure was created.
 ## CSS Deliverable
 * Made changes to the application to better reflect the color of pool/concrete, as well as more navigationally sensible
 
-1. Header, footer, and main content body
-2. Navigation Elements
+- Header, footer, and main content body
+- Navigation Elements
   - Spaced out the Navigation elements a bit to make them more readable
-3. Responsive to window resizing
-4. Application Elements
+- Responsive to window resizing
+- Application Elements
   - Used readable color contrasts, as well as a minimalist approach to information given/asked for
-5. Application Text Content
+- Application Text Content
   - Consistent readable colors, and consistent font throughout
-6. Application Images
+- Application Images
   - Example test is shown on Water Status page, to help locate the information needed
 
 ## JS Deliverable
 * For this deliverable I made my application functional to calculate pool chemical levels, give recommendations, and mock-track ratings given by other users
 
-1. login
+- login
   - you log in, name is stored locally, and you are redirected to the calculations page
-2. Database 
+- Database 
   - Calculations and recommendations are made based off of your inputted information
-3. Websocket
+- Websocket
   - setInterval function implimented to replicate real-time ratings of products we recommend, given by other users
-4. Application logic 
+- Application logic 
   - based off the measurements given, you are told if your chemicals are in balance, or what they stand in need of
 
 ## Service Deliverable
 * for this deliverable I created an HTTP service to host my frontend and provid ebackend endpoints
 
-1. Node.js/Express HTTP service
+- Node.js/Express HTTP service
   - completed
-2. Statis Middleware for frontend
+- Statis Middleware for frontend
   - completed
-3. Calls to third party endpoints
+- Calls to third party endpoints
   - completed
-4. Backend Service Endpoints
+- Backend Service Endpoints
   - Placeholders for both user login and ratings on products
-5. Frontend calls service endpoints
+- Frontend calls service endpoints
   - Completed with fetch function 
 
 ## DB Deliverable
 * For this deliverable I stored and retrieved data from MongoDB.
 
-1. MongoDB Atlas database created
+- MongoDB Atlas database created
   - completed
-2. Endpoints for data 
+- Endpoints for data 
   - Submit ratings button sends information to MongoDB
-3. Stores Data in MongoDB
+- Stores Data in MongoDB
   - completed
   

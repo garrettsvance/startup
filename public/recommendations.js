@@ -47,6 +47,13 @@ async function submitRating(rating) { //where are we geting the rating value
     }
 }
 
+function logout() {
+  localStorage.removeItem('userName');
+  fetch(`/api/auth/logout`, {
+    method: 'delete',
+  }).then(() => (window.location.href = '/'));
+}
+
 rateBtn.addEventListener('click', submitRating);
 
 displayQuote();

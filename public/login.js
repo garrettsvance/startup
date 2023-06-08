@@ -3,8 +3,10 @@
   if (userName) {
     document.querySelector('#name').textContent = userName;
     setDisplay('loginControls', 'none');
+    setDisplay('accountControls', 'block');
   } else {
     setDisplay('loginControls', 'block');
+    setDisplay('accountControls', 'none')
   }
 })();
 
@@ -53,4 +55,8 @@ function logout() {
   fetch(`/api/auth/logout`, {
     method: 'delete',
   }).then(() => (window.location.href = '/'));
+}
+
+function continueUser() {
+  window.location.href = 'waterstatus.html';
 }

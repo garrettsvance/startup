@@ -60,19 +60,19 @@ Data Entry mock-up as well as links to previous entries/group forums
 
 ## HTML deliverable
 For this deliverable, the application structure was created.
-1. 5 HTML pages
+- 5 HTML pages
   - Login, checking water status, previous tests, recommendations, and forums
-2. Links
+- Links
   - Links to different pages, starting with login
-3. Text
+- Text
   - Input options and instructions for text
-4. Images
+- Images
   - Images shown for the general idea of what a test looks like
-5. Login
+- Login
   - Simple username and password box
-6. Database
+- Database
   - Previous tests are shown
-7. Websocket
+- Websocket
   - Reviews of the products we recommend by other customers
 
 ## CSS Deliverable

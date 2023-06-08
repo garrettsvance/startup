@@ -1,11 +1,14 @@
 const { MongoClient } = require('mongodb');
 const config = require('./dbConfig.json');
+const bcrypt = require('bcrypt');
+const uuid = require('uuid');
 
 // Connect to the database cluster
 const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
 const client = new MongoClient(url);
 const db = client.db('water');
-const collection = db.collection('rating');
+const ratingCollection = db.collection('rating');
+const userCollection = db.collection('user');
 
 async function main() {
   // Test that you can connect to the database
@@ -19,7 +22,7 @@ async function main() {
 }
 
   async function addRating(rating) {
-  await collection.insertOne(rating);
+  await ratingCollection.insertOne(rating);
   }
 
 main().catch(console.error);

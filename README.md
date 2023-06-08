@@ -76,7 +76,7 @@ For this deliverable, the application structure was created.
   - Reviews of the products we recommend by other customers
 
 ## CSS Deliverable
-* Made changes to the application to better reflect the color of pool/concrete, as well as more navigationally sensible
+Made changes to the application to better reflect the color of pool/concrete, as well as more navigationally sensible
 
 - Header, footer, and main content body
 - Navigation Elements
@@ -90,7 +90,7 @@ For this deliverable, the application structure was created.
   - Example test is shown on Water Status page, to help locate the information needed
 
 ## JS Deliverable
-* For this deliverable I made my application functional to calculate pool chemical levels, give recommendations, and mock-track ratings given by other users
+For this deliverable I made my application functional to calculate pool chemical levels, give recommendations, and mock-track ratings given by other users
 
 - login
   - you log in, name is stored locally, and you are redirected to the calculations page
@@ -102,21 +102,21 @@ For this deliverable, the application structure was created.
   - based off the measurements given, you are told if your chemicals are in balance, or what they stand in need of
 
 ## Service Deliverable
-* for this deliverable I created an HTTP service to host my frontend and provid ebackend endpoints
+For this deliverable I created an HTTP service to host my frontend and provid ebackend endpoints
 
 - Node.js/Express HTTP service
-  - completed
+  - Completed
 - Statis Middleware for frontend
-  - completed
+  - Completed
 - Calls to third party endpoints
-  - completed
+  - Completed
 - Backend Service Endpoints
   - Placeholders for both user login and ratings on products
 - Frontend calls service endpoints
   - Completed with fetch function 
 
 ## DB Deliverable
-* For this deliverable I stored and retrieved data from MongoDB.
+For this deliverable I stored and retrieved data from MongoDB.
 
 - MongoDB Atlas database created
   - completed
@@ -124,4 +124,15 @@ For this deliverable, the application structure was created.
   - Submit ratings button sends information to MongoDB
 - Stores Data in MongoDB
   - completed
-  
+
+## Login Deliverable
+For this deliverable I added user registration and authentication
+
+- User Registration
+  - Creates a new account in the database
+- Existing User
+  - Verififes the user's name and password from the data stored
+- Use MongoDB to store credentials
+  - Compeleted
+- Restricts Functionality
+  - You cannot access/save information without an account, defaults to guest account without

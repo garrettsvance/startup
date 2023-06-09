@@ -136,3 +136,15 @@ For this deliverable I added user registration and authentication
   - Compeleted
 - Restricts Functionality
   - You cannot access/save information without an account, defaults to guest account without
+
+## WebSocket Deliverable
+For this deliverable I enabled realtime reporting of product ratings from other users.
+
+- Backend Listens for websocket connection
+  - Completed
+- Frontend makes websocket connection
+  - Completed
+- Data sent over Websocket connection
+  - Completed
+- Websocket data displayed
+  - Completed (mostly. displays twice for some reason, but still displays)

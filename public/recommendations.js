@@ -1,11 +1,6 @@
-setInterval (() => {
-    const mockRating = Math.floor(Math.random()*5);
-    const updates = document.getElementById('rating-event');
-    updates.innerHTML = 
-    `<div class="event"><span class="rating-event">Tim</span> rated a product ${mockRating}</div>` + updates.innerHTML;
-}, 15000);
+let socket;
 
-    //console.log(updates)   
+configureWebSocket();
 
 function displayQuote(data) {
     fetch('https://api.quotable.io/random')
@@ -26,11 +21,12 @@ function displayQuote(data) {
       });
 }
 
-async function submitRating(rating) { //where are we geting the rating value
+async function submitRating() { 
     const Rating = document.getElementById('rating').value;
     const userName = localStorage.getItem('userName')
     const newRating = {name: userName, rating: Rating};
 
+    broadcastEvent(userName, Rating);
     try {
       const response = await fetch('/api/rating', { 
         method: 'POST',
@@ -40,12 +36,46 @@ async function submitRating(rating) { //where are we geting the rating value
 
       const ratings = await response.json();
       console.log(newRating);
-      localStorage.setItem('ratings', JSON.stringify(ratings)); //Do i need to change what i'm calling it in local storage?
+      localStorage.setItem('ratings', JSON.stringify(ratings));
+
     } catch {
       console.log('catch block');
-      //this.updateRatingsLocal(newRating);
     }
 }
+// setInterval (() => {
+//     const mockRating = Math.floor(Math.random()*5);
+//     const updates = document.getElementById('rating-event');
+//     updates.innerHTML = 
+//     `<div class="event"><span class="rating-event">Tim</span> rated a product ${mockRating}</div>` + updates.innerHTML;
+// }, 15000);
+
+  // Functionality for peer communication using WebSocket
+
+  function configureWebSocket() {
+    const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+    socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+    socket.onopen = (event) => {
+      displayMsg('system', 'game', 'connected');
+    };
+    socket.onmessage = async (event) => {
+      const msg = JSON.parse(await event.data.text());
+        displayMsg(localStorage.getItem('userName'), ` just rated a product ${msg.value} stars`);
+    };
+  }
+
+  function displayMsg(from, msg) {
+    let chatText = document.getElementById('rating-event') 
+      chatText.innerHTML = 
+      `<div class="event"><span> ${from}</span> ${msg}</div>` + chatText.innerHTML;
+  }
+
+  function broadcastEvent(from, value) {
+    const msg = {
+      from: from,
+      value: value,
+    };
+    socket.send(JSON.stringify(msg));
+  }
 
 function logout() {
   localStorage.removeItem('userName');

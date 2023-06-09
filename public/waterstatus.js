@@ -1,11 +1,10 @@
-
+const statusUpdate = 'statusUpdate';
+    
+    
+    
     function getUserName() {
         return localStorage.getItem('userName') ?? 'Guest';
     }
-
-    //let poolsize = document.getElementById('poolsize').value
-
-
 
     const out1 = document.getElementById('output1')
 

@@ -3,8 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
-import { WaterStatus } from './waterstatus/waterstatus';
-import { Recommendations } from './recommendations/recommendations';
+import { waterstatus } from './waterstatus/waterstatus';
+import { recommendations } from './recommendations/recommendations';
+import { AuthState } from './login/authState';
 
 
 function App() {
@@ -42,8 +43,8 @@ function App() {
 
             <Routes>
                 <Route path='/' element={<Login />} exact />
-                <Route path='/waterstatus' element={<WaterStatus />} />
-                <Route path='/recommendations' element={<Recommendations />} />
+                <Route path='/waterstatus' element={<waterstatus />} />
+                <Route path='/recommendations' element={<recommendations />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
 

@@ -148,3 +148,15 @@ For this deliverable I enabled realtime reporting of product ratings from other 
   - Completed
 - Websocket data displayed
   - Completed (mostly. displays twice for some reason, but still displays)
+
+## React Deliverable
+For this deliverable I converted the application to using React. The code should be all there, but unfortunately I ran out of time to debug the actual display of it. Hoping to get some sort of partial credit from it. 
+
+- Bundled and Transpiled using Vite
+  - Completed
+- Components
+  - Login, waterstatus, and recommendations have all been combined into a jsx file as components
+- Router
+  - Routing between the login, waterstatus, and recommendations portions have been implimented on the app.jsx file
+- Hooks
+  - useEffect implimented in my recommendations.jsx file for recording and retrieving votes
